@@ -29,10 +29,9 @@
                         "fetch_stash_count": true,
                         "fetch_status": true,
                         "fetch_upstream_icon": true,
-                        "fetch_worktree_count": true,
-                        "github_icon": "\ue709"
+                        "fetch_worktree_count": true
                     },
-                    "template": " <#ffffff>{{ .UpstreamIcon }} {{ .HEAD }}</>{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \ue728 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \ue728 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
+                    "template": " <#ffffff>{{.UpstreamIcon}}{{ .HEAD }}</>{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
                 }
             ],
             "type": "prompt"
