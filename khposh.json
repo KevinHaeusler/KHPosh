@@ -23,7 +23,16 @@
                 {
                     "type": "git",
                     "style": "plain",
-                    "foreground": "#e2e22e"
+                    "foreground": "#e2e22e",
+                    "properties": {
+                        "branch_icon": "\ue725 ",
+                        "fetch_stash_count": true,
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true,
+                        "fetch_worktree_count": true,
+                        "github_icon": "\ue709"
+                    },
+                    "template": " <#ffffff>{{ .UpstreamIcon }} {{ .HEAD }}</>{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \ue728 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \ue728 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
                 }
             ],
             "type": "prompt"
@@ -41,8 +50,8 @@
                 {
                     "type": "text",
                     "style": "plain",
-                    "foreground": "#A6E22E",
-                    "template": "\u279c"
+                    "foreground": "#ffffff",
+                    "template": " \u279c"
                 }
             ],
             "type": "prompt"
