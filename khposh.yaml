@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+final_space: true
+version: 2
+blocks:
+  - type: prompt
+    alignment: left
+    segments:
+      - type: session
+        style: plain
+        foreground: "#F92672"
+        template: "{{ .UserName }}<#ffffff> on </><#f92672>{{ .HostName }}<#ffffff>{{ if .SSHSession }} 󰢹 {{ end }}</> "
+      - type: path
+        style: plain
+        foreground: "#A6E22E"
+        properties:
+          style: full
+      - type: git
+        style: plain
+        foreground: "#ffffff"
+        properties:
+          fetch_status: true
+          fetch_stash_count: false
+          fetch_worktree_count: false
+          fetch_upstream_icon: false
+          fetch_bare_info: false
+          branch_icon: 
+          branch_identical_icon: ≡
+          branch_ahead_icon: ↑
+          branch_behind_icon: ↓
+          branch_gone_icon: ≢
+          commit_icon: 
+          tag_icon: 
+          rebase_icon: 
+          cherry_pick_icon: 
+          revert_icon: 
+          merge_icon: 
+          no_commits_icon: 
+          github_icon: 󰊤
+          gitlab_icon: 
+          bitbucket_icon: 
+          azure_devops_icon: 
+          codecommit_icon: 
+          git_icon: 
+          branch_max_length: 0
+          fetch_user: false
+
+  - type: prompt
+    alignment: right
+    segments:
+      - type: python
+        style: plain
+        foreground: "#A6E22E"
+        template: "  {{ .Full }} "
+
+  - type: prompt
+    alignment: left
+    newline: true
+    segments:
+      - type: shell
+        style: plain
+        template: "{{.Name }}"
+        foreground: "#A6E22E"
+      - type: text
+        style: plain
+        foreground: "#ffffff"
+        template: " "
