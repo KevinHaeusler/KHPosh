@@ -8,7 +8,10 @@ blocks:
       - type: session
         style: plain
         foreground: "#F92672"
-        template: "{{ .UserName }}<#ffffff> on </><#f92672>{{ if .WSL }}WSL at {{ end }}{{ .HostName }}<#ffffff>{{ if .SSHSession }} 󰢹 {{ end }}</> "
+        template: "{{ .UserName }}<#ffffff> on </><#f92672>{{ .HostName }}<#ffffff>{{ if .SSHSession }} 󰢹 {{ end }}</> "
+      - type: os
+        style: plain
+        foreground: "#ffffff"
       - type: path
         style: plain
         foreground: "#A6E22E"
