@@ -1,16 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
 
@@ -21,12 +10,6 @@
 
 </div>
 
-
-
-
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 
@@ -36,7 +19,6 @@ This is a Oh-My-Posh Template with the colorscheme of monokai-night theme.
 
 
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 
@@ -75,7 +57,6 @@ Follow https://ohmyposh.dev/docs/installation/prompt for your specific shell and
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Just download it and make your own if you want to use it as a template.
@@ -84,7 +65,6 @@ Just download it and make your own if you want to use it as a template.
 
 
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -93,7 +73,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Jan De Dobbeleer](https://github.com/JanDeDobbeleer) for creating and sharing Oh-My-Posh
