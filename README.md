@@ -45,9 +45,9 @@ Or just follow the docs https://ohmyposh.dev/docs/
    git clone https://github.com/KevinHaeusler/KHPosh
    ```
 2. Activate the Oh-My-Posh Theme Powershell
-  ```powershell
-  oh-my-posh --init --shell pwsh --config "D:\path\to\khposh.yaml" | Invoke-Expression
-  ```
+   ```powershell
+   oh-my-posh --init --shell pwsh --config "D:\path\to\khposh.yaml" | Invoke-Expression
+   ```
 3. Activate the Oh-My-Posh Theme Bash
    ```sh
    eval "$(oh-my-posh init bash --config /path/to/khdev.omp.json)"
