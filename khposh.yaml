@@ -52,6 +52,22 @@ blocks:
         style: plain
         foreground: "#A6E22E"
         template: "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+      - type: java
+        style: plain
+        foreground: "#f89820"
+        template: "  {{ .Full }}"
+      - type: docker
+        style: plain
+        foreground: "#56adbc"
+        template: "  {{ .Context }} "
+      - type: node
+        style: plain
+        foreground: "#A6E22E"
+        template: "  {{ .Full }} "
+      - type: npm
+        style: plain
+        foreground: "#A6E22E"
+        template: " {{ .Full }} "
 
   # System Information top right
   - type: prompt
@@ -83,6 +99,10 @@ blocks:
         style: plain
         template: "{{.Name }}"
         foreground: "#A6E22E"
+      - type: root
+        style: plain
+        foreground: "#F92672"
+        template: 
       - type: text
         style: plain
         foreground: "#ffffff"
